@@ -1,2 +1,2 @@
-\# This is just for my backup snippet file for CF 
+# This is just for my backup snippet file for CF 
 
