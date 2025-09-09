@@ -18,7 +18,7 @@ using str = string;
 
 //Here is the code:
 void naruto() {
-    
+
     
 }
 // Bismillah...
