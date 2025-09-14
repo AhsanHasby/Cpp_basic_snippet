@@ -16,6 +16,7 @@ using str = string;
 
 
 //Here is the code:
+//** Main part() :
 bool isPrime(ll n) {
     if(n < 2 || n%2 == 0) return false;
     for(ll i = 3; i*i <= n; i += 2) {
