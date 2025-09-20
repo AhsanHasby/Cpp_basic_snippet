@@ -24,6 +24,11 @@ void naruto() {
 // Bismillah...
 int main() {
     WAKE UP_TO REALITY
+
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
     
     //test cases
     int test = 1;

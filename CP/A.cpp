@@ -18,21 +18,7 @@ const char endL = '\n';
 
 //Here is the code:
 void naruto() {
-    int n; cin >> n;
-    cin.ignore();
-    vector<pair<int, str>> v;
-    for(int i = 0; i < n; i++) {
-        str s;
-        getline(cin, s);
-        size_t indx = s.find_last_of(' ');
-
-        str name = s.substr(0, indx);
-        int x = stoi(s.substr(indx+1));
-        v.push_back({x, name});
-    }
-
-    sort(v.rbegin(), v.rend());
-    for(auto i : v) cout << i.second << endL;
+    
     
 }
 // Bismillah...
