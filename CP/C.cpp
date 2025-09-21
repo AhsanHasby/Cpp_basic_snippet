@@ -11,9 +11,9 @@ using str  = string;
 const char endL = '\n';
 const int  inf  = 0x3f3f3f3f;
 // =================== Fast IO ===================
-#define WAKE    ios_base::sync_with_stdio(false)
-#define UP_TO   cin.tie(nullptr)
-#define REALITY cout.tie(nullptr)
+#define WAKE    ios_base::sync_with_stdio(false);
+#define UP_TO   cin.tie(nullptr);
+#define REALITY cout.tie(nullptr);
 // =================== Macros ===================
 #define pb      emplace_back
 #define mp      make_pair
