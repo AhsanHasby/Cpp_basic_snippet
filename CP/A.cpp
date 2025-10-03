@@ -10,13 +10,13 @@ using str  = string;
 // =================== Constants ===================
 const char endL = '\n';
 const int  inf  = 0x3f3f3f3f;
+const int  MAX  = 200000; //if given
 // =================== Fast IO ===================
 #define WAKE    ios_base::sync_with_stdio(false);
 #define UP_TO   cin.tie(nullptr);
 #define REALITY cout.tie(nullptr);
 // =================== Macros ===================
 #define pb      emplace_back
-#define mp      make_pair
 #define ALL(x)  (x).begin(), (x).end()
 #define rALL(x) (x).rbegin(), (x).rend()
 
@@ -32,10 +32,18 @@ const int  inf  = 0x3f3f3f3f;
 #define yes     cout << "YES\n"
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
+void DomainExpansion() {
+    ll n; cin >> n; 
+    str s; cin >> s;
+    set<char> st;
+    ll ans = 0; 
+    for(int i = 0; i < n; i++) {
+        st.insert(s[i]);
+        ans += sz(st);
+    }
 
-void naruto() {
-    
-    
+    cout << ans << endL;
+
 }
 // Bismillah...
 int main() {
@@ -49,9 +57,11 @@ int main() {
     //test cases
     int test = 1;
     cin >> test;
+    cin.ignore();
+
     for(int i = 1; i <= test; i++) {
-        // cout << "Case " << i <<": ";
-        naruto();
+        //cout << "Case " << i <<": ";
+        DomainExpansion();
     }
     return 0;
 }
