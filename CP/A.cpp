@@ -1,4 +1,10 @@
-
+/*
+░█████╗░██████╗░██╗░██████╗███████╗  ██╗
+██╔══██╗██╔══██╗██║██╔════╝██╔════╝  ██║
+███████║██████╔╝██║╚█████╗░█████╗░░  ██║
+██╔══██║██╔══██╗██║░╚═══██╗██╔══╝░░  ╚═╝
+██║░░██║██║░░██║██║██████╔╝███████╗  ██╗
+╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═════╝░╚══════╝  ╚═╝*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -33,16 +39,23 @@ const int  MAX  = 200000; //if given
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
 void DomainExpansion() {
-    ll n; cin >> n; 
-    str s; cin >> s;
-    set<char> st;
-    ll ans = 0; 
+    int n, k; cin >> n >> k;
+    vector<int> a(n), b(n);
+    int sum = 0, mx = -1, ans = -1;
     for(int i = 0; i < n; i++) {
-        st.insert(s[i]);
-        ans += sz(st);
+        cin >> a[i];
     }
-
+    for(int i = 0; i < n; i++) {
+        cin >> b[i];
+    }
+    int que = min(n, k);
+    for(int i = 0; i < que; i++) {
+        sum += a[i];
+        mx = max(mx, b[i]);
+        ans = max(ans, sum + (k-i-1)*mx);
+    }
     cout << ans << endL;
+
 
 }
 // Bismillah...
@@ -57,7 +70,7 @@ int main() {
     //test cases
     int test = 1;
     cin >> test;
-    cin.ignore();
+    //cin.ignore();
 
     for(int i = 1; i <= test; i++) {
         //cout << "Case " << i <<": ";
