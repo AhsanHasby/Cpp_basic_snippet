@@ -27,12 +27,25 @@ const int  MAX  = 200000; //if given
 #define rall(x) (x).rbegin(), (x).rend()
 #define sz(x)   (int)(x.size())
 
-#define print(arr) for(auto &it:(arr)) cout << it << " " << endL;
+#define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
 #define yes     cout << "YES\n"
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
 void DomainExpansion() {
-    
+    ll n, k; cin >> n >> k;
+    map<ll, bool> mp;
+    for(int i = 0; i < n; i++) {
+        ll a; cin >> a;
+        mp[a] = true;
+    }
+    for(auto it : mp) {
+        if(mp.find(it.first-k) != mp.end()) {
+            yes;
+            return;
+        }
+    }
+    no;
+
 
 }
 // Bismillah...

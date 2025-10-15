@@ -27,7 +27,7 @@ const int  MAX  = 200000; //if given
 #define rall(x) (x).rbegin(), (x).rend()
 #define sz(x)   (int)(x.size())
 
-#define print(arr) for(auto &it:(arr)) cout << it << " " << endL;
+#define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
 #define yes     cout << "YES\n"
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
