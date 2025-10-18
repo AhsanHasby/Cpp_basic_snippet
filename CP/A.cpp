@@ -32,21 +32,9 @@ const int  MAX  = 200000; //if given
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
 void DomainExpansion() {
-    ll n, k; cin >> n >> k;
-    map<ll, bool> mp;
-    for(int i = 0; i < n; i++) {
-        ll a; cin >> a;
-        mp[a] = true;
-    }
-    for(auto it : mp) {
-        if(mp.find(it.first-k) != mp.end()) {
-            yes;
-            return;
-        }
-    }
-    no;
-
-
+    
+    
+    
 }
 // Bismillah...
 int main() {
