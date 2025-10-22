@@ -26,15 +26,16 @@ const int  MAX  = 200000; //if given
 #define all(x)  (x).begin(), (x).end()
 #define rall(x) (x).rbegin(), (x).rend()
 #define sz(x)   (int)(x.size())
+#define pb(x)    push_back(x)
 
 #define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
 #define yes     cout << "YES\n"
 #define no      cout << "NO\n"
 //================= MAIN CODE ===============
+
 void DomainExpansion() {
-    
-    
-    
+
+
 }
 // Bismillah...
 int main() {
