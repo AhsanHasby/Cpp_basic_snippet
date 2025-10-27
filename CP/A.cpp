@@ -30,40 +30,13 @@ const long long MOD  = (1e9+7); //if given
 #define eb       emplace_back
 
 #define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
-#define yes     cout << "YES\n"
-#define no      cout << "NO\n"
+#define YES     cout << "YES\n"
+#define NO      cout << "NO\n"
 //================= MAIN CODE ===============
 
 void DomainExpansion() {
-    str s; cin >> s;
-    ll n = sz(s), max_1 = 0;
+    
 
-    for(int i = 0; i < n; i++) {
-        if(s[i] == '1') 
-            max_1++;
-        else 
-            break;
-    }
-    for(int i = n-1; i > 0 && max_1 != n; i--) {
-        if(s[i] == '1') 
-            max_1++;
-        else 
-            break;
-    }
-    ll cnt = 0;
-    for(int i = 0; i < n; i++) {
-        if(s[i] == '1') 
-            cnt++;
-        else 
-            cnt = 0;
-        max_1 = max(max_1, cnt);
-    }
-    ll area = 0;
-    if(max_1 == n) area = max_1*max_1;
-    else if(max_1 == 1) area = 1;
-    else if(max_1 != 0) area = ((max_1+1)/2)*((max_1+2)/2);
-
-    cout << area << endL; 
 
 }
 // Bismillah...
