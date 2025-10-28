@@ -34,10 +34,15 @@ const long long MOD  = (1e9+7); //if given
 #define NO      cout << "NO\n"
 //================= MAIN CODE ===============
 
+void UniversalPull() {
+
+
+}
+
 void DomainExpansion() {
     
 
-
+    
 }
 // Bismillah...
 int main() {
