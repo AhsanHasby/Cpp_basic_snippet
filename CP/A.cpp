@@ -16,9 +16,9 @@ using vin  = vector<int>;
 using vll  = vector<ll>;
 // =================== Constants ===================
 const char endL = '\n';
-const int  inf  = 0x3f3f3f3f;
-const int  MAX  = 200000; //if given
-const long long MOD  = (1e9+7); //if given
+const int  IMAX  = 1e9;
+const ll   LMAX  = 1e18;
+const ll   MOD  = (1e9+7); //if given
 // =================== Fast IO ===================
 #define WAKE    ios_base::sync_with_stdio(false);
 #define UP_TO   cin.tie(nullptr);
@@ -41,7 +41,6 @@ void UniversalPull() {
 
 void DomainExpansion() {
     
-
     
 }
 // Bismillah...
