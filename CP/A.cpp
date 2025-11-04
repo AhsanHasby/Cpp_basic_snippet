@@ -27,7 +27,7 @@ const ll   MOD  = (1e9+7); //if given
 #define all(x)  (x).begin(), (x).end()
 #define rall(x) (x).rbegin(), (x).rend()
 #define sz(x)   (int)(x.size())
-#define eb       emplace_back
+#define eb       emplace_back //try_emplace(1 insrt)
 
 #define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
 #define YES     cout << "YES\n"
@@ -41,6 +41,7 @@ void UniversalPull() {
 
 void DomainExpansion() {
     
+
     
 }
 // Bismillah...
@@ -54,7 +55,7 @@ int main() {
     
     //test cases
     int test = 1;
-    cin >> test;
+    // cin >> test;
     //cin.ignore();
 
     for(int i = 1; i <= test; i++) {
