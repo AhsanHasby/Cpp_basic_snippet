@@ -34,15 +34,15 @@ const ll   MOD  = (1e9+7); //if given
 #define NO      cout << "NO\n"
 //================= MAIN CODE ===============
 
-void UniversalPull() {
+bool UniversalPull() {
 
-
+    return true;
 }
 
 void DomainExpansion() {
     
 
-    
+
 }
 // Bismillah...
 int main() {
@@ -55,7 +55,7 @@ int main() {
     
     //test cases
     int test = 1;
-    // cin >> test;
+    cin >> test;
     //cin.ignore();
 
     for(int i = 1; i <= test; i++) {
