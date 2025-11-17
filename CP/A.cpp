@@ -29,6 +29,8 @@ const ll   MOD  = (1e9+7); //if given
 #define sz(x)   (int)(x.size())
 #define eb       emplace_back //try_emplace(1 insrt)
 
+#define Unique(x) x.erase(unique(all(x)), x.end())
+
 #define print(arr) for(auto &it:(arr)) cout << it << " "; cout << endL;
 #define YES     cout << "YES\n"
 #define NO      cout << "NO\n"
@@ -36,14 +38,16 @@ const ll   MOD  = (1e9+7); //if given
 
 bool UniversalPull() {
 
-    return true;
+    return true; 
 }
 
 void DomainExpansion() {
-    
+    int n; cin >> n;
+    ll result = ((1LL << n) - 1) % MOD;
 
-
+    cout << result << endL;
 }
+
 // Bismillah...
 int main() {
     WAKE UP_TO REALITY
@@ -55,7 +59,7 @@ int main() {
     
     //test cases
     int test = 1;
-    cin >> test;
+    //cin >> test;
     //cin.ignore();
 
     for(int i = 1; i <= test; i++) {
