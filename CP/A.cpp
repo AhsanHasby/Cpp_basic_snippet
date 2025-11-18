@@ -36,16 +36,37 @@ const ll   MOD  = (1e9+7); //if given
 #define NO      cout << "NO\n"
 //================= MAIN CODE ===============
 
-bool UniversalPull() {
+string UniversalPull() {
 
-    return true; 
+    return "Assi tussi almighti pushi"; 
 }
 
 void DomainExpansion() {
-    int n; cin >> n;
-    ll result = ((1LL << n) - 1) % MOD;
+    ll n, q, sum = 0; cin >> n >> q;
+    vll v(n);
+    for(auto &i : v) {
+        cin >> i;
+        sum += i;
+    }
 
-    cout << result << endL;
+    ll set = -1;
+    for(int i = 0; i < q; ++i) {
+        int ff; cin >> ff;
+        if(ff&1) {
+            ll x, y; cin >> x >> y;
+
+            v[x-1] = y;
+            sum = sum + y - set;
+        }
+        else {
+            ll x; cin >> x;
+            set = x;
+            sum = n*x;
+            cout << sum << endL;
+        }
+
+    }
+
 }
 
 // Bismillah...
